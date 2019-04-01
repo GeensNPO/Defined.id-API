@@ -1,0 +1,43 @@
+{
+    "name": "defined-id",
+    "private": true,
+    "version": "0.0.0",
+    "description": "defined-id npm package api",
+    "dependencies": {
+        "@geens_npo/defined-id": "^0.1.2",
+        "@sailshq/connect-redis": "^3.2.1",
+        "@sailshq/lodash": "^3.10.3",
+        "@sailshq/socket.io-redis": "^5.2.0",
+        "@types/express": "^4.16.0",
+        "@types/node": "^10.12.18",
+        "async": "2.0.1",
+        "grunt": "1.0.1",
+        "jsonld": "^1.4.0",
+        "sails": "^1.1.0",
+        "sails-hook-grunt": "^3.0.2",
+        "sails-hook-orm": "^2.0.0-16",
+        "sails-hook-sockets": "^1.4.0",
+        "ts-node": "^7.0.1",
+        "typescript": "^3.2.4",
+        "uuid": "^3.3.2"
+    },
+    "devDependencies": {
+        "@sailshq/eslint": "^4.19.3"
+    },
+    "scripts": {
+        "start": "NODE_ENV=production node app.js",
+        "test": "npm run lint && node ./node_modules/mocha/bin/mocha test/lifecycle.test.js test/integration/**/*.test.js",
+        "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+        "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+    },
+    "main": "app.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/anonymous node/sails user/global-id.git"
+    },
+    "author": "Geens NPO",
+    "license": "",
+    "engines": {
+        "node": ">=8.12"
+    }
+}
